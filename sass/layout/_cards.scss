@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    font-size: 0.6em;
+    gap: 7%;
+    @include tablet{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include mobile-only{
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
+$cards-shift: 30px;
+@for $i from 1 to 4{
+    .card#{$i}{
+        width: 250px;
+        height: 205px;
+        background-color: $dark-magenta;
+        border-radius: 5px;
+        padding: 25px 25px 25px 25px;
+        margin-top: $cards-shift*$i;
+        height: 130px;
+        @include tablet{
+            margin-top: 15px;
+        }
+        @include mobile-only{
+            margin-top: 15px;
+        }
+        p{
+            text-align: justify;
+            margin-top: 20px;
+            line-height: 1.3em;
+        }
+        h2, p{
+            color: white;
+        }
+        h3{
+            color: $soft-pink;
+            font-weight: 400;
+        }
+        &__head{
+            margin-top: 15px;
+        }
+    }
+}
+
+img{
+    float: left;
+    border-radius: 50%;
+    width: 40px;
+    height: auto;
+    margin-right: 8%;
+}
+h2, h3{
+    margin: 0;
+}
+

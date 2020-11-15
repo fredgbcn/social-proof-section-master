@@ -1,0 +1,100 @@
+$margin-stars: 10%;
+header{
+    display: flex;
+    
+    @include mobile-only{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    flex-direction: row;
+    justify-content: space-between;
+    color: $dark-magenta;
+    padding-top: 80px;
+    .title{
+        width: 40%;
+        @include tablet{
+            width:80%;
+        }
+        @include mobile-only{
+            width: 80%;
+        }
+        p{
+            font-size: 0.8em;
+            color: $dark-grayish-magenta;
+        }
+    }
+
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+        width: 40%;
+        margin-right: 5%;
+        @include mobile-only{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:80%;
+        }
+        li{
+            display: flex;
+            flex-direction: row;
+            padding: 5px 0px 5px 0px;
+            font-size: small;
+        }
+    }
+
+    @for $i from 1 to 4{
+        .a#{$i}{
+            width: 300px;
+                background-color: $light-grayish-magenta;
+                padding: 10px 0px 10px 10px;
+                border-radius: 3px;
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+                color: $dark-magenta;
+                
+                .stars{
+                    background: url(../images/icon-star.svg);
+                    background-repeat: repeat-x;
+                    width: 85px;
+                    height: 20px;
+                }
+                p{
+                    margin-top: 3px;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+
+.a2{
+    position: relative;
+    margin-top: 8px;
+    margin-left: $margin-stars;
+    @include tablet{
+        margin-left: 0px;
+    }
+    @include mobile-only{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+}
+.a3{
+    margin-top: 8px;
+    margin-left: $margin-stars*2;
+    @include tablet{
+        margin-left: 0px;
+    }
+    @include mobile-only{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+

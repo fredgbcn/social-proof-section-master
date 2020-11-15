@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "spartan";
+  src: url("Spartan-Regular.ttf") format("ttf");
+}
+body {
+  font-family: "spartan";
+  font-weight: "400";
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #502050;
+  padding-top: 80px;
+}
+@media (max-width: 740px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+header .title {
+  width: 40%;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  header .title {
+    width: 80%;
+  }
+}
+@media (max-width: 740px) {
+  header .title {
+    width: 80%;
+  }
+}
+header .title p {
+  font-size: 0.8em;
+  color: #937b92;
+}
+header ul {
+  list-style: none;
+  padding-left: 0;
+  width: 40%;
+  margin-right: 5%;
+}
+@media (max-width: 740px) {
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+}
+header ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px 5px 0px;
+  font-size: small;
+}
+header .a1 {
+  width: 300px;
+  background-color: #f7f2f7;
+  padding: 10px 0px 10px 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #502050;
+}
+header .a1 .stars {
+  background: url(../images/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 85px;
+  height: 20px;
+}
+header .a1 p {
+  margin-top: 3px;
+  margin: auto;
+  text-align: center;
+}
+header .a2 {
+  width: 300px;
+  background-color: #f7f2f7;
+  padding: 10px 0px 10px 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #502050;
+}
+header .a2 .stars {
+  background: url(../images/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 85px;
+  height: 20px;
+}
+header .a2 p {
+  margin-top: 3px;
+  margin: auto;
+  text-align: center;
+}
+header .a3 {
+  width: 300px;
+  background-color: #f7f2f7;
+  padding: 10px 0px 10px 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #502050;
+}
+header .a3 .stars {
+  background: url(../images/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 85px;
+  height: 20px;
+}
+header .a3 p {
+  margin-top: 3px;
+  margin: auto;
+  text-align: center;
+}
+
+.a2 {
+  position: relative;
+  margin-top: 8px;
+  margin-left: 10%;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  .a2 {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 740px) {
+  .a2 {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+.a3 {
+  margin-top: 8px;
+  margin-left: 20%;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  .a3 {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 740px) {
+  .a3 {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  font-size: 0.6em;
+  gap: 7%;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  .container {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 740px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card1 {
+  width: 250px;
+  height: 205px;
+  background-color: #502050;
+  border-radius: 5px;
+  padding: 25px 25px 25px 25px;
+  margin-top: 30px;
+  height: 130px;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  .card1 {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 740px) {
+  .card1 {
+    margin-top: 15px;
+  }
+}
+.card1 p {
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.3em;
+}
+.card1 h2, .card1 p {
+  color: white;
+}
+.card1 h3 {
+  color: #ee68a4;
+  font-weight: 400;
+}
+.card1__head {
+  margin-top: 15px;
+}
+
+.card2 {
+  width: 250px;
+  height: 205px;
+  background-color: #502050;
+  border-radius: 5px;
+  padding: 25px 25px 25px 25px;
+  margin-top: 60px;
+  height: 130px;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  .card2 {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 740px) {
+  .card2 {
+    margin-top: 15px;
+  }
+}
+.card2 p {
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.3em;
+}
+.card2 h2, .card2 p {
+  color: white;
+}
+.card2 h3 {
+  color: #ee68a4;
+  font-weight: 400;
+}
+.card2__head {
+  margin-top: 15px;
+}
+
+.card3 {
+  width: 250px;
+  height: 205px;
+  background-color: #502050;
+  border-radius: 5px;
+  padding: 25px 25px 25px 25px;
+  margin-top: 90px;
+  height: 130px;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  .card3 {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 740px) {
+  .card3 {
+    margin-top: 15px;
+  }
+}
+.card3 p {
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.3em;
+}
+.card3 h2, .card3 p {
+  color: white;
+}
+.card3 h3 {
+  color: #ee68a4;
+  font-weight: 400;
+}
+.card3__head {
+  margin-top: 15px;
+}
+
+img {
+  float: left;
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+  margin-right: 8%;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+  height: 100%;
+}
+
+body {
+  background: url(../images/bg-pattern-bottom-desktop.svg), url(../images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, top left;
+}
+
+.general {
+  position: relative;
+  margin: 0px 80px 0px 80px;
+}
+@media (min-width: 741px) and (max-width: 885px) {
+  .general {
+    margin: 0px;
+  }
+}
+@media (max-width: 740px) {
+  .general {
+    margin: 0px;
+  }
+}
+
+.attribution {
+  margin-top: 40px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
